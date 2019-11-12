@@ -26,6 +26,8 @@
 		18DFBBB7237A79EB005E7388 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DFBBB5237A79EA005E7388 /* Main.storyboard */; };
 		18DFBBB9237A7E04005E7388 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBBB8237A7E04005E7388 /* HomeViewController.swift */; };
 		18DFBBBB237A800C005E7388 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBBBA237A800C005E7388 /* PostImageCell.swift */; };
+		18DFBBBD237A8460005E7388 /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBBBC237A8460005E7388 /* PostHeaderCell.swift */; };
+		18DFBBBF237A8539005E7388 /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBBBE237A8539005E7388 /* PostActionCell.swift */; };
 		2C595F061B34B73A00355AE7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C595F041B34B73A00355AE7 /* Constants.swift */; };
 		2C8562851AFAB65F00F0B24B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C85627E1AFAB65F00F0B24B /* Images.xcassets */; };
 		2C8562871AFAB65F00F0B24B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C85627F1AFAB65F00F0B24B /* LaunchScreen.xib */; };
@@ -56,6 +58,8 @@
 		18DFBBB6237A79EA005E7388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18DFBBB8237A7E04005E7388 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		18DFBBBA237A800C005E7388 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
+		18DFBBBC237A8460005E7388 /* PostHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderCell.swift; sourceTree = "<group>"; };
+		18DFBBBE237A8539005E7388 /* PostActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostActionCell.swift; sourceTree = "<group>"; };
 		2C595F041B34B73A00355AE7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2C85627E1AFAB65F00F0B24B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2C85627F1AFAB65F00F0B24B /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				18DFBBBA237A800C005E7388 /* PostImageCell.swift */,
+				18DFBBBC237A8460005E7388 /* PostHeaderCell.swift */,
+				18DFBBBE237A8539005E7388 /* PostActionCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -412,6 +418,7 @@
 				1839E94E237A18C200B35C81 /* CreateUserNameViewController.swift in Sources */,
 				18DFBBA2237A5AEA005E7388 /* MainTabBarController.swift in Sources */,
 				1839E94A237A096A00B35C81 /* LoginViewController.swift in Sources */,
+				18DFBBBF237A8539005E7388 /* PostActionCell.swift in Sources */,
 				18DFBBAA237A6C4B005E7388 /* Post.swift in Sources */,
 				18DFBBBB237A800C005E7388 /* PostImageCell.swift in Sources */,
 				18DFBBAC237A6EAE005E7388 /* UIImage+Size.swift in Sources */,
@@ -423,6 +430,7 @@
 				18DFBB9C237A5147005E7388 /* Storyboard+Utility.swift in Sources */,
 				18DFBBA8237A6A51005E7388 /* PostService.swift in Sources */,
 				1839E94C237A143E00B35C81 /* User.swift in Sources */,
+				18DFBBBD237A8460005E7388 /* PostHeaderCell.swift in Sources */,
 				2C595F061B34B73A00355AE7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

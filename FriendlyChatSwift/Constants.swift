@@ -19,6 +19,9 @@
 struct Constants {
 
     // MARK: NotificationKeys
+    struct Segue {
+          static let toCreateUsername = "toCreateUsername"
+      }
     
     struct NotificationKeys {
         static let SignedIn = "onSignInCompleted"

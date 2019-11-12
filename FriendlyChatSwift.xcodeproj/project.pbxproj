@@ -14,13 +14,13 @@
 		1839E94C237A143E00B35C81 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839E94B237A143E00B35C81 /* User.swift */; };
 		1839E94E237A18C200B35C81 /* CreateUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839E94D237A18C200B35C81 /* CreateUserNameViewController.swift */; };
 		1839E950237A1B1400B35C81 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839E94F237A1B1400B35C81 /* UserService.swift */; };
-		1839E952237A1ED400B35C81 /* AfterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839E951237A1ED400B35C81 /* AfterLoginViewController.swift */; };
 		18DFBB9C237A5147005E7388 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBB9B237A5147005E7388 /* Storyboard+Utility.swift */; };
+		18DFBB9E237A56D6005E7388 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBB9D237A56D6005E7388 /* HomeViewController.swift */; };
+		18DFBBA0237A56E6005E7388 /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBB9F237A56E6005E7388 /* FindFriendsViewController.swift */; };
 		2C595F061B34B73A00355AE7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C595F041B34B73A00355AE7 /* Constants.swift */; };
 		2C8562851AFAB65F00F0B24B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C85627E1AFAB65F00F0B24B /* Images.xcassets */; };
 		2C8562871AFAB65F00F0B24B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C85627F1AFAB65F00F0B24B /* LaunchScreen.xib */; };
 		5F5A537E1ADE67D500F81DF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A537D1ADE67D500F81DF0 /* AppDelegate.swift */; };
-		5F5A53801ADE67D500F81DF0 /* FCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A537F1ADE67D500F81DF0 /* FCViewController.swift */; };
 		9F6073469FE4497F9673E910 /* Pods_FriendlyChatSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34D32ED957516E916EDC0E1 /* Pods_FriendlyChatSwift.framework */; };
 		A92476E81D6F96C300A96C4B /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A92476E61D6F96C300A96C4B /* Roboto-Regular.ttf */; };
 		A92476E91D6F96C300A96C4B /* RobotoMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A92476E71D6F96C300A96C4B /* RobotoMono-Regular.ttf */; };
@@ -35,15 +35,15 @@
 		1839E94B237A143E00B35C81 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1839E94D237A18C200B35C81 /* CreateUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserNameViewController.swift; sourceTree = "<group>"; };
 		1839E94F237A1B1400B35C81 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
-		1839E951237A1ED400B35C81 /* AfterLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLoginViewController.swift; sourceTree = "<group>"; };
 		18DFBB9B237A5147005E7388 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
+		18DFBB9D237A56D6005E7388 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		18DFBB9F237A56E6005E7388 /* FindFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
 		2C595F041B34B73A00355AE7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2C85627E1AFAB65F00F0B24B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2C85627F1AFAB65F00F0B24B /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		47BDA9BA1B03D338F2B3A7F7 /* Pods-FriendlyChatSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyChatSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FriendlyChatSwift/Pods-FriendlyChatSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		5F5A53791ADE67D500F81DF0 /* FriendlyChatSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendlyChatSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5A537D1ADE67D500F81DF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F5A537F1ADE67D500F81DF0 /* FCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCViewController.swift; sourceTree = "<group>"; };
 		A92476E61D6F96C300A96C4B /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		A92476E71D6F96C300A96C4B /* RobotoMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Regular.ttf"; sourceTree = "<group>"; };
 		D34D32ED957516E916EDC0E1 /* Pods_FriendlyChatSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendlyChatSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,9 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				1839E949237A096A00B35C81 /* LoginViewController.swift */,
-				5F5A537F1ADE67D500F81DF0 /* FCViewController.swift */,
 				1839E94D237A18C200B35C81 /* CreateUserNameViewController.swift */,
-				1839E951237A1ED400B35C81 /* AfterLoginViewController.swift */,
+				18DFBB9D237A56D6005E7388 /* HomeViewController.swift */,
+				18DFBB9F237A56E6005E7388 /* FindFriendsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -380,9 +380,9 @@
 				1839E950237A1B1400B35C81 /* UserService.swift in Sources */,
 				1839E94E237A18C200B35C81 /* CreateUserNameViewController.swift in Sources */,
 				1839E94A237A096A00B35C81 /* LoginViewController.swift in Sources */,
-				1839E952237A1ED400B35C81 /* AfterLoginViewController.swift in Sources */,
-				5F5A53801ADE67D500F81DF0 /* FCViewController.swift in Sources */,
 				5F5A537E1ADE67D500F81DF0 /* AppDelegate.swift in Sources */,
+				18DFBBA0237A56E6005E7388 /* FindFriendsViewController.swift in Sources */,
+				18DFBB9E237A56D6005E7388 /* HomeViewController.swift in Sources */,
 				18DFBB9C237A5147005E7388 /* Storyboard+Utility.swift in Sources */,
 				1839E94C237A143E00B35C81 /* User.swift in Sources */,
 				2C595F061B34B73A00355AE7 /* Constants.swift in Sources */,

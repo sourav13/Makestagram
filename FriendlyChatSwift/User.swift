@@ -10,7 +10,7 @@ import Foundation
 
 import FirebaseDatabase.FIRDataSnapshot
 
-class User {
+class User :Codable{
     
     // MARK: - Properties
     
@@ -50,7 +50,12 @@ class User {
     // MARK: - Class Methods
     
     // 5
-    static func setCurrent(_ user: User) {
+    static func setCurrent(_ user: User,writetoUserDefaults:Bool = false) {
+        if writetoUserDefaults{
+            if let data = try? JSONEncoder().encode(user){
+                UserDefaults.standard.set(data,forKey:Constants.UserDefaults.currentUser)
+            }
+        }
         _current = user
     }
 

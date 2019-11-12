@@ -34,4 +34,7 @@ struct Constants {
         static let text = "text"
         static let imageUrl = "photoUrl"
     }
+    struct UserDefaults {
+        static let currentUser = "currentUser"
+    }
 }

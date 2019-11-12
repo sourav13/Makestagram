@@ -31,13 +31,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         FirebaseApp.configure()
-        let initialViewController = UIStoryboard.initializeViewController(for: .login)
-        window?.rootViewController = initialViewController
-        window?.makeKeyAndVisible()
+       configureInitialRootViewController(for: window)
         return true
     }
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         return FUIAuth.defaultAuthUI()?.handleOpen(url, sourceApplication: sourceApplication ?? "") ?? false
+    }
+}
+extension AppDelegate {
+    func configureInitialRootViewController(for window: UIWindow?) {
+        let defaults = UserDefaults.standard
+        let initialViewController: UIViewController
+
+        if let _ = Auth.auth().currentUser,
+           let userData = defaults.object(forKey: Constants.UserDefaults.currentUser) as? Data,
+           let user = try? JSONDecoder().decode(User.self, from: userData) {
+            User.setCurrent(user)
+            initialViewController = UIStoryboard.initializeViewController(for: .main)
+        } else {
+            initialViewController = UIStoryboard.initializeViewController(for: .login)
+        }
+
+        window?.rootViewController = initialViewController
+        window?.makeKeyAndVisible()
     }
 }

@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="tab_plus_black" id="4Nj-Fv-9IK">
+                    <tabBarItem key="tabBarItem" tag="1" title="" image="tab_plus_black" id="4Nj-Fv-9IK">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
                 </viewController>
@@ -41,7 +41,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="tab_find_friends_black" id="b6X-Py-1Gd">
+                    <tabBarItem key="tabBarItem" tag="2" title="" image="tab_find_friends_black" id="b6X-Py-1Gd">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
                 </viewController>
@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="-239" y="-562"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="etN-f5-CKT">
             <objects>
-                <tabBarController id="1OX-LD-qzW" sceneMemberID="viewController">
+                <tabBarController id="1OX-LD-qzW" customClass="MainTabBarController" customModule="FriendlyChatSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Qd-N7-2YP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

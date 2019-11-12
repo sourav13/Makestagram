@@ -17,6 +17,8 @@
 		18DFBB9C237A5147005E7388 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBB9B237A5147005E7388 /* Storyboard+Utility.swift */; };
 		18DFBB9E237A56D6005E7388 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBB9D237A56D6005E7388 /* HomeViewController.swift */; };
 		18DFBBA0237A56E6005E7388 /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBB9F237A56E6005E7388 /* FindFriendsViewController.swift */; };
+		18DFBBA2237A5AEA005E7388 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBBA1237A5AEA005E7388 /* MainTabBarController.swift */; };
+		18DFBBA4237A5D05005E7388 /* MGPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBBA3237A5D05005E7388 /* MGPhotoHelper.swift */; };
 		2C595F061B34B73A00355AE7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C595F041B34B73A00355AE7 /* Constants.swift */; };
 		2C8562851AFAB65F00F0B24B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C85627E1AFAB65F00F0B24B /* Images.xcassets */; };
 		2C8562871AFAB65F00F0B24B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C85627F1AFAB65F00F0B24B /* LaunchScreen.xib */; };
@@ -38,6 +40,8 @@
 		18DFBB9B237A5147005E7388 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		18DFBB9D237A56D6005E7388 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		18DFBB9F237A56E6005E7388 /* FindFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
+		18DFBBA1237A5AEA005E7388 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		18DFBBA3237A5D05005E7388 /* MGPhotoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGPhotoHelper.swift; sourceTree = "<group>"; };
 		2C595F041B34B73A00355AE7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2C85627E1AFAB65F00F0B24B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2C85627F1AFAB65F00F0B24B /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 				1839E94D237A18C200B35C81 /* CreateUserNameViewController.swift */,
 				18DFBB9D237A56D6005E7388 /* HomeViewController.swift */,
 				18DFBB9F237A56E6005E7388 /* FindFriendsViewController.swift */,
+				18DFBBA1237A5AEA005E7388 /* MainTabBarController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 		1839E943237A06CB00B35C81 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				18DFBBA3237A5D05005E7388 /* MGPhotoHelper.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -379,8 +385,10 @@
 			files = (
 				1839E950237A1B1400B35C81 /* UserService.swift in Sources */,
 				1839E94E237A18C200B35C81 /* CreateUserNameViewController.swift in Sources */,
+				18DFBBA2237A5AEA005E7388 /* MainTabBarController.swift in Sources */,
 				1839E94A237A096A00B35C81 /* LoginViewController.swift in Sources */,
 				5F5A537E1ADE67D500F81DF0 /* AppDelegate.swift in Sources */,
+				18DFBBA4237A5D05005E7388 /* MGPhotoHelper.swift in Sources */,
 				18DFBBA0237A56E6005E7388 /* FindFriendsViewController.swift in Sources */,
 				18DFBB9E237A56D6005E7388 /* HomeViewController.swift in Sources */,
 				18DFBB9C237A5147005E7388 /* Storyboard+Utility.swift in Sources */,

@@ -13,7 +13,7 @@ let photoHelper = MGPhotoHelper()
     override func viewDidLoad() {
         super.viewDidLoad()
         photoHelper.completionHandler = { image in
-               print("handle image")
+            PostService.create(for: image)
            }
         delegate = self
         tabBar.unselectedItemTintColor = .black

@@ -24,7 +24,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "F5A783CA-0E57-4269-BFBD-0CC84C59B8E7"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FriendlyChatSwift/PostActionCell.swift"
@@ -32,8 +32,100 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
             endingLineNumber = "18"
-            landmarkName = "awakeFromNib()"
-            landmarkType = "7">
+            landmarkName = "PostActionCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F5A783CA-0E57-4269-BFBD-0CC84C59B8E7 - f6db76729466d4ee"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FriendlyChatSwift.PostActionCell.delegate.getter : Swift.Optional&lt;FriendlyChatSwift.PostActionCellDelegate&gt;"
+                  moduleName = "FriendlyChatSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/souravsachdeva/Desktop/FriendlyChat/FriendlyChatSwift/PostActionCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "F5A783CA-0E57-4269-BFBD-0CC84C59B8E7 - fcfd584030a5ecfa"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FriendlyChatSwift.PostActionCell.delegate.setter : Swift.Optional&lt;FriendlyChatSwift.PostActionCellDelegate&gt;"
+                  moduleName = "FriendlyChatSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/souravsachdeva/Desktop/FriendlyChat/FriendlyChatSwift/PostActionCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  uuid = "F5A783CA-0E57-4269-BFBD-0CC84C59B8E7 - 71f997ca9c19eeb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FriendlyChatSwift.PostActionCell.delegate.modify : Swift.Optional&lt;FriendlyChatSwift.PostActionCellDelegate&gt;"
+                  moduleName = "FriendlyChatSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/souravsachdeva/Desktop/FriendlyChat/FriendlyChatSwift/PostActionCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "29">
+               </Location>
+               <Location
+                  uuid = "F5A783CA-0E57-4269-BFBD-0CC84C59B8E7 - 77b3fe606a58b8a0"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FriendlyChatSwift.PostActionCell.delegate.modify : Swift.Optional&lt;FriendlyChatSwift.PostActionCellDelegate&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "FriendlyChatSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/souravsachdeva/Desktop/FriendlyChat/FriendlyChatSwift/PostActionCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "F5A783CA-0E57-4269-BFBD-0CC84C59B8E7 - 7333ce2db13440a8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Owned To Guaranteed&gt; of FriendlyChatSwift.PostActionCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; FriendlyChatSwift.PostActionCell"
+                  moduleName = "FriendlyChatSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/souravsachdeva/Desktop/FriendlyChat/FriendlyChatSwift/PostActionCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "F5A783CA-0E57-4269-BFBD-0CC84C59B8E7 - abe8ae8af2833772"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[0] = Owned To Guaranteed&gt; of FriendlyChatSwift.PostActionCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;FriendlyChatSwift.PostActionCell&gt;"
+                  moduleName = "FriendlyChatSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/souravsachdeva/Desktop/FriendlyChat/FriendlyChatSwift/PostActionCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

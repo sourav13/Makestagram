@@ -13,6 +13,7 @@
 		1839E94C237A143E00B35C81 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839E94B237A143E00B35C81 /* User.swift */; };
 		1839E94E237A18C200B35C81 /* CreateUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839E94D237A18C200B35C81 /* CreateUserNameViewController.swift */; };
 		1839E950237A1B1400B35C81 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839E94F237A1B1400B35C81 /* UserService.swift */; };
+		1873FE42237BB4D000E2730D /* LikeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873FE41237BB4D000E2730D /* LikeService.swift */; };
 		18DFBB9C237A5147005E7388 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBB9B237A5147005E7388 /* Storyboard+Utility.swift */; };
 		18DFBBA0237A56E6005E7388 /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBB9F237A56E6005E7388 /* FindFriendsViewController.swift */; };
 		18DFBBA2237A5AEA005E7388 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBBA1237A5AEA005E7388 /* MainTabBarController.swift */; };
@@ -45,6 +46,7 @@
 		1839E94B237A143E00B35C81 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1839E94D237A18C200B35C81 /* CreateUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserNameViewController.swift; sourceTree = "<group>"; };
 		1839E94F237A1B1400B35C81 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		1873FE41237BB4D000E2730D /* LikeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeService.swift; sourceTree = "<group>"; };
 		18DFBB9B237A5147005E7388 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		18DFBB9F237A56E6005E7388 /* FindFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
 		18DFBBA1237A5AEA005E7388 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				1839E94F237A1B1400B35C81 /* UserService.swift */,
 				18DFBBA5237A6975005E7388 /* StorageService.swift */,
 				18DFBBA7237A6A51005E7388 /* PostService.swift */,
+				1873FE41237BB4D000E2730D /* LikeService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				18DFBBA2237A5AEA005E7388 /* MainTabBarController.swift in Sources */,
 				1839E94A237A096A00B35C81 /* LoginViewController.swift in Sources */,
 				18DFBBBF237A8539005E7388 /* PostActionCell.swift in Sources */,
+				1873FE42237BB4D000E2730D /* LikeService.swift in Sources */,
 				18DFBBAA237A6C4B005E7388 /* Post.swift in Sources */,
 				18DFBBBB237A800C005E7388 /* PostImageCell.swift in Sources */,
 				18DFBBAC237A6EAE005E7388 /* UIImage+Size.swift in Sources */,

@@ -4,7 +4,7 @@ import UIKit
 import Kingfisher
 
 class HomeViewController:UIViewController{
-
+let refreshControl = UIRefreshControl()
     @IBOutlet weak var tableView: UITableView!
     let timestampFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
@@ -13,17 +13,29 @@ class HomeViewController:UIViewController{
         return dateFormatter
     }()
     var posts = [Post]()
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        configureTableView()
-        UserService.posts(for: User.current) { (posts) in
-            self.posts = posts
-            self.tableView.reloadData()
-        }
-    }
+ override func viewDidLoad() {
+      super.viewDidLoad()
+
+      configureTableView()
+      reloadTimeline()
+  }
+
+  @objc func reloadTimeline() {
+      UserService.timeline { (posts) in
+          self.posts = posts
+
+          if self.refreshControl.isRefreshing {
+              self.refreshControl.endRefreshing()
+          }
+
+          self.tableView.reloadData()
+      }
+  }
     func configureTableView(){
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
+        refreshControl.addTarget(self, action: #selector(reloadTimeline), for: .valueChanged)
+         tableView.addSubview(refreshControl)
     }
 }
 extension HomeViewController: UITableViewDataSource {
@@ -40,7 +52,7 @@ extension HomeViewController: UITableViewDataSource {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostHeaderCell") as! PostHeaderCell
-            cell.userNameLabel.text = User.current.username
+            cell.userNameLabel.text = post.poster.username
 
             return cell
 

@@ -16,7 +16,7 @@ class User :Codable{
     
     let uid: String
     let username: String
-    
+    var isFollowed = false
     // MARK: - Init
     
     init(uid: String, username: String) {

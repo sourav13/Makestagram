@@ -6,6 +6,7 @@ import Kingfisher
 class HomeViewController:UIViewController{
 let refreshControl = UIRefreshControl()
     @IBOutlet weak var tableView: UITableView!
+        let paginationHelper = MGPaginationHelper<Post>(serviceMethod: UserService.timeline)
     let timestampFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .short
@@ -14,23 +15,23 @@ let refreshControl = UIRefreshControl()
     }()
     var posts = [Post]()
  override func viewDidLoad() {
-      super.viewDidLoad()
+     super.viewDidLoad()
 
-      configureTableView()
-      reloadTimeline()
-  }
+     configureTableView()
+     reloadTimeline()
+ }
 
-  @objc func reloadTimeline() {
-      UserService.timeline { (posts) in
-          self.posts = posts
+    @objc func reloadTimeline() {
+     self.paginationHelper.reloadData(completion: { [unowned self] (posts) in
+         self.posts = posts
 
-          if self.refreshControl.isRefreshing {
-              self.refreshControl.endRefreshing()
-          }
+         if self.refreshControl.isRefreshing {
+             self.refreshControl.endRefreshing()
+         }
 
-          self.tableView.reloadData()
-      }
-  }
+         self.tableView.reloadData()
+     })
+ }
     func configureTableView(){
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
@@ -39,6 +40,17 @@ let refreshControl = UIRefreshControl()
     }
 }
 extension HomeViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.section >= posts.count - 1 {
+            paginationHelper.paginate(completion: { [unowned self] (posts) in
+                self.posts.append(contentsOf: posts)
+
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            })
+        }
+    }
     func numberOfSections(in tableView: UITableView) -> Int {
         return posts.count
     }
@@ -51,20 +63,20 @@ extension HomeViewController: UITableViewDataSource {
 
         switch indexPath.row {
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PostHeaderCell") as! PostHeaderCell
+            let cell :PostHeaderCell = tableView.dequeueReusableCell()
             cell.userNameLabel.text = post.poster.username
 
             return cell
 
         case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PostImageCell") as! PostImageCell
+            let cell :PostImageCell = tableView.dequeueReusableCell()
             let imageURL = URL(string: post.imageURL)
             cell.postimageView.kf.setImage(with: imageURL)
 
             return cell
 
         case 2:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PostActionCell") as! PostActionCell
+            let cell:PostActionCell = tableView.dequeueReusableCell()
             cell.delegate = self
             configureCell(cell,with:post)
 

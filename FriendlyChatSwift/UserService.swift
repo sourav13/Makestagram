@@ -28,39 +28,45 @@ struct UserService {
             })
         }
     }
-    static func timeline(completion: @escaping ([Post]) -> Void) {
+    static func timeline(pageSize: UInt, lastPostKey: String? = nil, completion: @escaping ([Post]) -> Void) {
         let currentUser = User.current
 
-        let timelineRef = Database.database().reference().child("timeline").child(currentUser.uid)
+              let timelineRef = Database.database().reference().child("timeline").child(currentUser.uid)
+        var query = timelineRef.queryOrderedByKey().queryLimited(toLast: pageSize)
+        if let lastPostKey = lastPostKey {
+            query = query.queryEnding(atValue: lastPostKey)
+        }
+
         timelineRef.observeSingleEvent(of: .value, with: { (snapshot) in
-            guard let snapshot = snapshot.children.allObjects as? [DataSnapshot]
-                else { return completion([]) }
+                   guard let snapshot = snapshot.children.allObjects as? [DataSnapshot]
+                       else { return completion([]) }
 
-            let dispatchGroup = DispatchGroup()
+                   let dispatchGroup = DispatchGroup()
 
-            var posts = [Post]()
+                   var posts = [Post]()
 
-            for postSnap in snapshot {
-                guard let postDict = postSnap.value as? [String : Any],
-                    let posterUID = postDict["poster_uid"] as? String
-                    else { continue }
+                   for postSnap in snapshot {
+                       guard let postDict = postSnap.value as? [String : Any],
+                           let posterUID = postDict["poster_uid"] as? String
+                           else { continue }
 
-                dispatchGroup.enter()
+                       dispatchGroup.enter()
 
-                PostService.show(forKey: postSnap.key, posterUID: posterUID) { (post) in
-                    if let post = post {
-                        posts.append(post)
-                    }
+                       PostService.show(forKey: postSnap.key, posterUID: posterUID) { (post) in
+                           if let post = post {
+                               posts.append(post)
+                           }
 
-                    dispatchGroup.leave()
-                }
-            }
+                           dispatchGroup.leave()
+                       }
+                   }
 
-            dispatchGroup.notify(queue: .main, execute: {
-                completion(posts.reversed())
-            })
-        })
+                   dispatchGroup.notify(queue: .main, execute: {
+                       completion(posts.reversed())
+                   })
+               })
     }
+
     static func followers(for user: User, completion: @escaping ([String]) -> Void) {
     let followersRef = Database.database().reference().child("followers").child(user.uid)
 

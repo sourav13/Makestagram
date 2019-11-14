@@ -13,6 +13,8 @@
 		1839E94C237A143E00B35C81 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839E94B237A143E00B35C81 /* User.swift */; };
 		1839E94E237A18C200B35C81 /* CreateUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839E94D237A18C200B35C81 /* CreateUserNameViewController.swift */; };
 		1839E950237A1B1400B35C81 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1839E94F237A1B1400B35C81 /* UserService.swift */; };
+		185DD848237D207A00A59C4E /* UITableView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DD847237D207A00A59C4E /* UITableView+Utility.swift */; };
+		185DD84A237D23CD00A59C4E /* MGPaginationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DD849237D23CD00A59C4E /* MGPaginationHelper.swift */; };
 		1873FE42237BB4D000E2730D /* LikeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873FE41237BB4D000E2730D /* LikeService.swift */; };
 		1873FE44237BBD7200E2730D /* FollowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873FE43237BBD7200E2730D /* FollowService.swift */; };
 		1873FE47237BBEEE00E2730D /* FindFriends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1873FE45237BBEEE00E2730D /* FindFriends.storyboard */; };
@@ -50,6 +52,8 @@
 		1839E94B237A143E00B35C81 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1839E94D237A18C200B35C81 /* CreateUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserNameViewController.swift; sourceTree = "<group>"; };
 		1839E94F237A1B1400B35C81 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		185DD847237D207A00A59C4E /* UITableView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Utility.swift"; sourceTree = "<group>"; };
+		185DD849237D23CD00A59C4E /* MGPaginationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGPaginationHelper.swift; sourceTree = "<group>"; };
 		1873FE41237BB4D000E2730D /* LikeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeService.swift; sourceTree = "<group>"; };
 		1873FE43237BBD7200E2730D /* FollowService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowService.swift; sourceTree = "<group>"; };
 		1873FE46237BBEEE00E2730D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FindFriends.storyboard; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				18DFBBA3237A5D05005E7388 /* MGPhotoHelper.swift */,
+				185DD849237D23CD00A59C4E /* MGPaginationHelper.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				18DFBBAB237A6EAE005E7388 /* UIImage+Size.swift */,
 				18DFBBAD237A6F64005E7388 /* StorageReference+Post.swift */,
 				18767CBC237D190400B5B7A3 /* DatabaseReference+Location.swift */,
+				185DD847237D207A00A59C4E /* UITableView+Utility.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -433,12 +439,14 @@
 				1839E950237A1B1400B35C81 /* UserService.swift in Sources */,
 				18DFBBA6237A6975005E7388 /* StorageService.swift in Sources */,
 				1839E94E237A18C200B35C81 /* CreateUserNameViewController.swift in Sources */,
+				185DD848237D207A00A59C4E /* UITableView+Utility.swift in Sources */,
 				18DFBBA2237A5AEA005E7388 /* MainTabBarController.swift in Sources */,
 				1873FE4D237BC55700E2730D /* FindFriendsViewController.swift in Sources */,
 				1839E94A237A096A00B35C81 /* LoginViewController.swift in Sources */,
 				18DFBBBF237A8539005E7388 /* PostActionCell.swift in Sources */,
 				1873FE42237BB4D000E2730D /* LikeService.swift in Sources */,
 				18DFBBAA237A6C4B005E7388 /* Post.swift in Sources */,
+				185DD84A237D23CD00A59C4E /* MGPaginationHelper.swift in Sources */,
 				18DFBBBB237A800C005E7388 /* PostImageCell.swift in Sources */,
 				1873FE49237BBFCF00E2730D /* FindFriendsCell.swift in Sources */,
 				18DFBBAC237A6EAE005E7388 /* UIImage+Size.swift in Sources */,

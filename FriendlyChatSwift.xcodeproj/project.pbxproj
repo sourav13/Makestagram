@@ -18,6 +18,7 @@
 		1873FE47237BBEEE00E2730D /* FindFriends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1873FE45237BBEEE00E2730D /* FindFriends.storyboard */; };
 		1873FE49237BBFCF00E2730D /* FindFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873FE48237BBFCF00E2730D /* FindFriendsCell.swift */; };
 		1873FE4D237BC55700E2730D /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873FE4C237BC55700E2730D /* FindFriendsViewController.swift */; };
+		18767CBD237D190400B5B7A3 /* DatabaseReference+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18767CBC237D190400B5B7A3 /* DatabaseReference+Location.swift */; };
 		18DFBB9C237A5147005E7388 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBB9B237A5147005E7388 /* Storyboard+Utility.swift */; };
 		18DFBBA2237A5AEA005E7388 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBBA1237A5AEA005E7388 /* MainTabBarController.swift */; };
 		18DFBBA4237A5D05005E7388 /* MGPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFBBA3237A5D05005E7388 /* MGPhotoHelper.swift */; };
@@ -54,6 +55,7 @@
 		1873FE46237BBEEE00E2730D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FindFriends.storyboard; sourceTree = "<group>"; };
 		1873FE48237BBFCF00E2730D /* FindFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsCell.swift; sourceTree = "<group>"; };
 		1873FE4C237BC55700E2730D /* FindFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
+		18767CBC237D190400B5B7A3 /* DatabaseReference+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseReference+Location.swift"; sourceTree = "<group>"; };
 		18DFBB9B237A5147005E7388 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		18DFBBA1237A5AEA005E7388 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		18DFBBA3237A5D05005E7388 /* MGPhotoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGPhotoHelper.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				18DFBB9B237A5147005E7388 /* Storyboard+Utility.swift */,
 				18DFBBAB237A6EAE005E7388 /* UIImage+Size.swift */,
 				18DFBBAD237A6F64005E7388 /* StorageReference+Post.swift */,
+				18767CBC237D190400B5B7A3 /* DatabaseReference+Location.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				5F5A537E1ADE67D500F81DF0 /* AppDelegate.swift in Sources */,
 				18DFBBA4237A5D05005E7388 /* MGPhotoHelper.swift in Sources */,
 				18DFBBAE237A6F64005E7388 /* StorageReference+Post.swift in Sources */,
+				18767CBD237D190400B5B7A3 /* DatabaseReference+Location.swift in Sources */,
 				18DFBBB9237A7E04005E7388 /* HomeViewController.swift in Sources */,
 				18DFBB9C237A5147005E7388 /* Storyboard+Utility.swift in Sources */,
 				18DFBBA8237A6A51005E7388 /* PostService.swift in Sources */,

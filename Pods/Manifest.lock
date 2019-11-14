@@ -10,15 +10,15 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.3):
     - BoringSSL-GRPC/Interface (= 0.0.3)
   - BoringSSL-GRPC/Interface (0.0.3)
-  - FBSDKCoreKit (5.10.0):
-    - FBSDKCoreKit/Basics (= 5.10.0)
-    - FBSDKCoreKit/Core (= 5.10.0)
-  - FBSDKCoreKit/Basics (5.10.0)
-  - FBSDKCoreKit/Core (5.10.0):
+  - FBSDKCoreKit (5.10.1):
+    - FBSDKCoreKit/Basics (= 5.10.1)
+    - FBSDKCoreKit/Core (= 5.10.1)
+  - FBSDKCoreKit/Basics (5.10.1)
+  - FBSDKCoreKit/Core (5.10.1):
     - FBSDKCoreKit/Basics
-  - FBSDKLoginKit (5.10.0):
-    - FBSDKLoginKit/Login (= 5.10.0)
-  - FBSDKLoginKit/Login (5.10.0):
+  - FBSDKLoginKit (5.10.1):
+    - FBSDKLoginKit/Login (= 5.10.1)
+  - FBSDKLoginKit/Login (5.10.1):
     - FBSDKCoreKit (~> 5.0)
   - Firebase (6.12.0):
     - Firebase/Core (= 6.12.0)
@@ -139,7 +139,7 @@ PODS:
   - GoogleDataTransportCCTSupport (1.2.1):
     - GoogleDataTransport (~> 3.0)
     - nanopb (~> 0.3.901)
-  - GoogleSignIn (5.0.1):
+  - GoogleSignIn (5.0.2):
     - AppAuth (~> 1.2)
     - GTMAppAuth (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
@@ -241,8 +241,8 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AppAuth: bce82c76043657c99d91e7882e8a9e1a93650cd4
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
-  FBSDKCoreKit: f9bae468a078f20c05c73450825ccd54cfafbbb7
-  FBSDKLoginKit: 4ece964272a52c4e1363d5c048a545e33761491b
+  FBSDKCoreKit: aa8887f21898ac5bcf07bef4fb253aa41c91be04
+  FBSDKLoginKit: 4f99f1f2d295778a9fac27917306140d19c2b189
   Firebase: da031bc7012374e3bed17a6731b89327b29863b9
   FirebaseAnalytics: 4e53a7eb7b76bc703c4d9239bc964545e9b23361
   FirebaseAuth: b401a012cc33b04df3b52bb308b04e8766f2693e
@@ -258,7 +258,7 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 037f46d1d8ae8b312720f1042585ab961a1289e3
   GoogleDataTransport: 166f9b9f82cbf60a204e8fe2daa9db3e3ec1fb15
   GoogleDataTransportCCTSupport: f6ab1962e9dc05ab1fb938b795e5b310209edeec
-  GoogleSignIn: 3a51b9bb8e48b635fd7f4272cee06ca260345b86
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
   GoogleUtilities: f895fde57977df4e0233edda0dbeac490e3703b6
   "gRPC-C++": 9dfe7b44821e7b3e44aacad2af29d2c21f7cde83
   gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
